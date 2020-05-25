@@ -51,17 +51,31 @@ public class Main {
 
         /**
          * Exercise 32
-         * Distance calculator between two points.s
+         * Distance calculator between two points.
          */
 
-        Point first = new Point(6,5);
-        Point second = new Point(3,1);
-        System.out.println("distance(0,0)="+first.distance());
-        System.out.println("distance(second)="+first.distance(2,2));
-        System.out.println("distance(2,2)" +first.distance(2,2));
+//        Point first = new Point(6,5);
+//        Point second = new Point(3,1);
+//        System.out.println("distance(0,0)="+first.distance());
+//        System.out.println("distance(second)="+first.distance(2,2));
+//        System.out.println("distance(2,2)" +first.distance(2,2));
+//
+//        Point point= new Point();
+//        System.out.println("distance()="+point.distance());
 
-        Point point= new Point();
-        System.out.println("distance()="+point.distance());
+
+        /**
+         * Exercise 33
+         * Carpet cost calculator using three classes.
+         */
+        Carpet carpet= new Carpet(3.5);
+        Floor floor= new Floor(2.75,4.0);
+        Calculator calculator= new Calculator(floor,carpet);
+        System.out.println("total= "+calculator.getTotalCost());
+        carpet= new Carpet(1.5);
+        floor= new Floor(5.4,4.5);
+        calculator= new Calculator(floor,carpet);
+        System.out.println("total ="+calculator.getTotalCost());
 
     }
 }
