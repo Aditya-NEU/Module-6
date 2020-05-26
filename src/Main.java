@@ -68,14 +68,28 @@ public class Main {
          * Exercise 33
          * Carpet cost calculator using three classes.
          */
-        Carpet carpet= new Carpet(3.5);
-        Floor floor= new Floor(2.75,4.0);
-        Calculator calculator= new Calculator(floor,carpet);
-        System.out.println("total= "+calculator.getTotalCost());
-        carpet= new Carpet(1.5);
-        floor= new Floor(5.4,4.5);
-        calculator= new Calculator(floor,carpet);
-        System.out.println("total ="+calculator.getTotalCost());
+//        Carpet carpet= new Carpet(3.5);
+//        Floor floor= new Floor(2.75,4.0);
+//        Calculator calculator= new Calculator(floor,carpet);
+//        System.out.println("total= "+calculator.getTotalCost());
+//        carpet= new Carpet(1.5);
+//        floor= new Floor(5.4,4.5);
+//        calculator= new Calculator(floor,carpet);
+//        System.out.println("total ="+calculator.getTotalCost());
+
+
+        /**
+         *
+         * Exercise 34 is incomplete...
+         * Complete this 
+         */
+
+        ComplexNumbers one= new ComplexNumbers(1.0,1.0);
+        ComplexNumbers number= new ComplexNumbers(2.5,-1.5);
+        one.add(1,1);
+
+
+
 
     }
 }
