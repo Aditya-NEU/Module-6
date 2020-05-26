@@ -81,14 +81,27 @@ public class Main {
         /**
          *
          * Exercise 34 is incomplete...
-         * Complete this 
+         * Complete this
          */
 
-        ComplexNumbers one= new ComplexNumbers(1.0,1.0);
-        ComplexNumbers number= new ComplexNumbers(2.5,-1.5);
-        one.add(1,1);
+//        ComplexNumbers one= new ComplexNumbers(1.0,1.0);
+//        ComplexNumbers number= new ComplexNumbers(2.5,-1.5);
+//        one.add(1,1);
 
 
+        /**
+         * Exercise 35
+         * Inheritance example
+         */
+
+        Circle circle= new Circle(3.75);
+        System.out.println("circle.radius= "+circle.getRadius());
+        System.out.println("circle.area= "+circle.getArea());
+        Cylinder cylinder= new Cylinder(5.55,7.25);
+        System.out.println("cylinder.radius= "+cylinder.getRadius());
+        System.out.println("cylinder.height= "+cylinder.getHeight());
+        System.out.println("cylinder.aread= "+cylinder.getArea());
+        System.out.println("cylinder.volume= "+cylinder.getVolume());
 
 
     }
