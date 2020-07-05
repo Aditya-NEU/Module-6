@@ -108,16 +108,33 @@ public class Main {
          * Exercise 36 pool area and example of inheritance.
          */
 
-        Rectangle rectangle= new Rectangle(5,10);
-        System.out.println("rectangle.width= "+rectangle.getWidth());
-        System.out.println("rectangle.length= "+rectangle.getLength());
-        System.out.println("rectangle.area= "+rectangle.getArea());
-        Cuboid cuboid= new Cuboid(5,10,5);
-        System.out.println("cuboid.width= "+cuboid.getWidth());
-        System.out.println("cuboid.length= "+cuboid.getLength());
-        System.out.println("cuboid.area= "+cuboid.getArea());
-        System.out.println("cuboid.height= "+cuboid.getHeight());
-        System.out.println("cuboid.volume= "+cuboid.getVolume());
+//        Rectangle rectangle= new Rectangle(5,10);
+//        System.out.println("rectangle.width= "+rectangle.getWidth());
+//        System.out.println("rectangle.length= "+rectangle.getLength());
+//        System.out.println("rectangle.area= "+rectangle.getArea());
+//        Cuboid cuboid= new Cuboid(5,10,5);
+//        System.out.println("cuboid.width= "+cuboid.getWidth());
+//        System.out.println("cuboid.length= "+cuboid.getLength());
+//        System.out.println("cuboid.area= "+cuboid.getArea());
+//        System.out.println("cuboid.height= "+cuboid.getHeight());
+//        System.out.println("cuboid.volume= "+cuboid.getVolume());
+
+
+        Hamburger hamburger = new Hamburger("Basic", "Sausage", 3.56, "White");
+        double price = hamburger.itemizeHamburger();
+        hamburger.addHamburgerAddition1("Tomato", 0.27);
+        hamburger.addHamburgerAddition2("Lettuce", 0.75);
+        hamburger.addHamburgerAddition3("Cheese", 1.13);
+        System.out.println("Total Burger price is " + hamburger.itemizeHamburger());
+
+        HealthyBurger healthyBurger = new HealthyBurger("Bacon", 5.67);
+        healthyBurger.addHamburgerAddition1("Egg", 5.43);
+        healthyBurger.addHealthAddition1("Lentils", 3.41);
+        System.out.println("Total Healthy Burger price is  " + healthyBurger.itemizeHamburger());
+
+        DeluxeBurger db = new DeluxeBurger();
+        db.addHamburgerAddition3("Should not do this", 50.53);
+        db.itemizeHamburger();
 
     }
 }
